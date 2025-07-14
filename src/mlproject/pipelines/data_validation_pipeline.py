@@ -11,7 +11,7 @@ class DataValidationTrainingPipeline:
     def __init__(self):
         pass
     
-    def _validation(self):
+    def initiate_data_validation(self):
         config = ConfigurationManager()
         data_validation_config = config.get_data_validation_config()
         data_validation = DataValidation(config=data_validation_config)
